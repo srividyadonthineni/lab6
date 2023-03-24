@@ -6,15 +6,6 @@ def encode(password):
     return password
 
 
-def decode(encoded_pass):
-    back = 0
-    for j in encoded_pass:
-        j = int(j)
-        back += (j-3)
-    back = str(back)
-    return back
-
-
 def main():
     condition = True
     while condition:
