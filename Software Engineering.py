@@ -5,6 +5,20 @@ def encode(password):
         i += (i+3)
     return password
 
+def decode(password):
+    string_output = ''
+    for num in password:
+        if num == '0':
+            string_output += '7'
+        elif num == '1':
+            string_output += '8'
+        elif num == '2':
+            string_output += '9'
+        else:
+            output = int(num) - 3
+            string_output += str(output)
+    return string_output
+
 
 def main():
     condition = True
